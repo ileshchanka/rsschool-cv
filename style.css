@@ -7,6 +7,7 @@ body {
 	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 	line-height: 1.5;
 	max-width: 1000px;
+	min-width: 340px;
 	margin: 0 auto;
 	padding: 0 16px;
 }
@@ -42,12 +43,12 @@ header {
     border-radius: 8px;
 }
 
-.contact-info a {
+a {
 	color: #000;
 	text-decoration: none;
 }
 
-.contact-info a:hover {
+a:hover {
 	color: #3498db;
 }
 
@@ -185,9 +186,44 @@ div.education > div > p:first-child {
 	font-size: 0.8em;
 	color: #95a5a6;
 	text-align: center;
-	margin-top: 32px;
-	padding-top: 16px;
-	border-top: 1px solid #ecf0f1;
+}
+
+footer {
+	margin-top: 40px;
+	border-top: 2px solid #ecf0f1;
+}
+
+.footer-content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 16px;
+	gap: 24px;
+}
+
+.footer-content > p {
+	margin: 0;
+	font-size: 0.9em;
+}
+
+.footer-content > p a:hover {
+	color: #3498db;
+}
+
+.rs-school-link {
+	display: flex;
+	align-items: center;
+}
+
+.rs-school-logo {
+	height: 40px;
+	width: auto;
+	opacity: 0.8;
+	transition: opacity 0.2s ease;
+}
+
+.rs-school-logo:hover {
+	opacity: 1;
 }
 
 @media (max-width: 768px) {
@@ -283,5 +319,15 @@ div.education > div > p:first-child {
 	.gdpr {
 		font-size: 0.75em;
 		margin-top: 24px;
+	}
+
+	.footer-content {
+		flex-direction: column;
+		align-items: center;
+		gap: 16px;
+	}
+
+	.rs-school-logo {
+		height: 36px;
 	}
 }
