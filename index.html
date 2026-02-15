@@ -4,22 +4,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ihar Leshchanka CV</title>
+    <meta name="description"
+        content="Ihar Leshchanka - Frontend Developer with Android Development Experience. 5+ years in mobile development with Kotlin, Jetpack Compose, and modern web technologies.">
+    <meta name="keywords"
+        content="Frontend Developer, Android Developer, Kotlin, Jetpack Compose, JavaScript, TypeScript, Mobile Development">
+    <meta name="author" content="Ihar Leshchanka">
+    <title>Ihar Leshchanka - Frontend Developer CV</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+            <li><a href="#contacts">Contact Information</a></li>
+            <li><a href="#summary">Self-Introduction</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#code">Code Example</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#professional-development">Professional Development</a></li>
+            <li><a href="#languages">Languages</a></li>
+        </ul>
+    </nav>
+
     <header>
         <div class="header-text">
             <h1>Ihar Leshchanka</h1>
-            <p class="subtitle">Android Software Engineer (Kotlin | Jetpack Compose |
-                Coroutines) / Kotlin Multiplatform (KMP)</p>
+            <p class="subtitle">Frontend Developer &bull; Android Development Experience (Kotlin | Jetpack Compose |
+                Coroutines | KMP)</p>
         </div>
         <img src="profile.jpg" alt="Ihar Leshchanka photo" class="profile-photo">
     </header>
 
     <main>
-        <section class="contact-info">
+        <section id="contacts" class="contact-info">
             <h2>Contact Information</h2>
             <ul>
                 <li>📍 Warsaw, Poland</li>
@@ -30,47 +48,79 @@
             </ul>
         </section>
 
-        <section>
-            <h2>Summary</h2>
-            <p>Android Developer with 5+ years of experience building scalable, user-friendly mobile applications using
-                Kotlin and Jetpack Compose. Strong understanding of modern Android architecture, including Jetpack
-                Compose, MVVM, and dependency injection with Hilt/Dagger 2. Proven ability to improve app performance,
-                optimize UX, and lead technical improvements that directly impact business metrics. Additional
-                experience includes exploring Kotlin Multiplatform (KMP) in personal projects and 6 months of Flutter
-                development.</p>
+        <section id="summary">
+            <h2>Self-Introduction</h2>
+            <p>Frontend Developer with strong background as Android Developer with 5+ years of experience building
+                scalable, user-friendly mobile applications using Kotlin and Jetpack Compose. Strong understanding of
+                modern Android architecture, including Jetpack Compose, MVVM, and dependency injection with Hilt/Dagger
+                2. Proven ability to improve app performance, optimize UX, and lead technical improvements that directly
+                impact business metrics. Additional experience includes exploring Kotlin Multiplatform (KMP) in personal
+                projects and 6 months of Flutter development.</p>
         </section>
 
-        <section class="skills">
+        <section id="skills">
             <h2>Skills</h2>
+
+            <h3>Frontend Development</h3>
+            <ul>
+                <li><strong>Languages:</strong> JavaScript, TypeScript, HTML</li>
+                <li><strong>Styling:</strong> CSS3, Responsive Design</li>
+            </ul>
+
+            <h3>Android Development</h3>
             <ul>
                 <li><strong>Languages:</strong> Kotlin, Java</li>
                 <li><strong>Technologies:</strong> Jetpack Compose, Coroutines/Flow, Hilt/Dagger2/Koin, Retrofit, Room,
-                    Coil/Glide, Firebase Crashlytics</li>
+                    Coil/Glide, Firebase</li>
                 <li><strong>Architecture:</strong> MVVM, Clean Architecture, Modularization</li>
                 <li><strong>Testing:</strong> JUnit, Espresso, Mockito, MockK, Robolectric</li>
+            </ul>
+
+            <h3>General</h3>
+            <ul>
+                <li><strong>Version Control:</strong> Git (GitHub, GitLab, Bitbucket)</li>
                 <li><strong>CI/CD:</strong> GitHub Actions</li>
-                <li><strong>Tools:</strong> Android Studio, Postman, Charles Proxy</li>
-                <li><strong>Platforms:</strong> Jira, Confluence, Trello, Figma/Zeplin</li>
-                <li><strong>Communication:</strong> Slack, Microsoft Teams, Zoom, Google Meet</li>
-                <li><strong>Other:</strong> Google Maps API, BLE, REST API, GraphQL, Agile, Scrum, Material Design, Git
-                    (GitHub/GitLab/Bitbucket), Gradle, Android Jetpack, SQLite, Appsflyer</li>
+                <li><strong>Tools:</strong> Android Studio, Gradle, Postman, Charles Proxy</li>
+                <li><strong>Management:</strong> Jira, Confluence, Trello</li>
+                <li><strong>Design:</strong> Figma, Zeplin, Material Design</li>
+                <li><strong>APIs:</strong> REST API, GraphQL, Google Maps API, BLE</li>
+                <li><strong>Other:</strong> Agile, Scrum, Android Jetpack, SQLite, Appsflyer</li>
             </ul>
         </section>
 
-        <section class="experience">
-            <h2>Experience</h2>
+        <section id="code">
+            <h2>Code Example</h2>
+            <div class="card">
+                <pre><code>function bubbleSort(arr) {
+    const n = arr.length;
+    
+    for (let i = 0; i &lt; n - 1; i++) {
+        for (let j = 0; j &lt; n - i - 1; j++) {
+            if (arr[j] &gt; arr[j + 1]) {
+                [arr[j], arr[j + 1]] = [arr[j + 1], arr[j]];
+            }
+        }
+    }
+    
+    return arr;
+}</code></pre>
+            </div>
+        </section>
 
-            <div class="job">
+        <section id="experience">
+            <h2>Work Experience</h2>
+
+            <div class="card">
                 <div class="job-header">
                     <h3>Appyfurious (Remote)</h3>
-                    <p class="date">Mar 2024 – Aug 2025</p>
+                    <p class="date">Mar 2024 &ndash; Aug 2025</p>
                 </div>
                 <ul>
                     <li>Developed and published a mobile application using Jetpack Compose, improving UI rendering
                         performance by 30%</li>
                     <li>Designed reusable UI components and extended internal UI Kit to support cross-project
                         consistency</li>
-                    <li>Worked closely with product team to enhance user flows, resulting in 2× increase in app
+                    <li>Worked closely with product team to enhance user flows, resulting in 2&times; increase in app
                         engagement metrics</li>
                 </ul>
                 <p><strong>Achievements:</strong></p>
@@ -81,10 +131,10 @@
                 </ul>
             </div>
 
-            <div class="job">
+            <div class="card">
                 <div class="job-header">
                     <h3>Andersen (Hybrid)</h3>
-                    <p class="date">Mar 2023 – Mar 2024</p>
+                    <p class="date">Mar 2023 &ndash; Mar 2024</p>
                 </div>
 
                 <div class="project">
@@ -114,10 +164,10 @@
                 </ul>
             </div>
 
-            <div class="job">
+            <div class="card">
                 <div class="job-header">
                     <h3>Solbeg_ (Hybrid)</h3>
-                    <p class="date">Feb 2020 – Mar 2023</p>
+                    <p class="date">Feb 2020 &ndash; Mar 2023</p>
                 </div>
 
                 <div class="project">
@@ -139,43 +189,50 @@
             </div>
         </section>
 
-        <section>
+        <section id="education">
             <h2>Education</h2>
-            <div class="education">
+            <div class="card">
                 <div>
                     <p>Bachelor of Physical Education</p>
                     <p>Brest State A.S. Pushkin University</p>
                 </div>
-                <p class="date">2007-2012</p>
+                <p class="date">2007 &ndash; 2012</p>
             </div>
         </section>
 
-        <section>
+        <section id="professional-development">
             <h2>Professional Development</h2>
-            <div class="education">
+            <div class="card">
+                <div>
+                    <p>JS/FE Short Track 2026 Q1</p>
+                    <p>The Rolling Scopes School</p>
+                </div>
+                <p class="date">Jan 2026 &ndash; Present</p>
+            </div>
+            <div class="card">
                 <div>
                     <p>Android Developer (Professional)</p>
                     <p>OTUS</p>
                 </div>
-                <p class="date">Jul 2021 - Dec 2021</p>
+                <p class="date">Jul 2021 &ndash; Dec 2021</p>
             </div>
-            <div class="education">
+            <div class="card">
                 <div>
                     <p>Android Developer (Basic)</p>
                     <p>OTUS</p>
                 </div>
-                <p class="date">Jan 2021 - Jun 2021</p>
+                <p class="date">Jan 2021 &ndash; Jun 2021</p>
             </div>
-            <div class="education">
+            <div class="card">
                 <div>
                     <p>Android Development</p>
                     <p>IT Academy</p>
                 </div>
-                <p class="date">Feb 2020 - Jul 2020</p>
+                <p class="date">Feb 2020 &ndash; Jul 2020</p>
             </div>
         </section>
 
-        <section class="contact-info">
+        <section id="languages" class="contact-info">
             <h2>Languages</h2>
             <ul>
                 <li><strong>Russian:</strong> Native</li>
