@@ -139,7 +139,7 @@ div.card > div > p:first-child {
 }
 
 #experience .card ul li:before {
-  content: "•";
+  content: "\2022";
   position: absolute;
   left: 0;
   color: #3498db;
@@ -161,7 +161,7 @@ div.card > div > p:first-child {
 }
 
 #experience .project ul li:before {
-  content: "→";
+  content: "\2192";
   position: absolute;
   left: 0;
   color: #27ae60;
