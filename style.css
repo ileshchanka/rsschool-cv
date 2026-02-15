@@ -172,7 +172,8 @@ div.education > div > p:first-child {
   margin: 14px 0 14px 0;
 }
 
-.project h4 {
+.project h4,
+.skills h3 {
   margin: 0 0 8px 0;
   font-size: 0.95em;
   color: #2980b9;
@@ -319,7 +320,8 @@ footer {
     margin: 10px 0 10px 0;
   }
 
-  .project h4 {
+  .project h4,
+  .skills h3 {
     font-size: 0.9em;
     margin-bottom: 6px;
   }
