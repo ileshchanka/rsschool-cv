@@ -4,17 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ihar Leshchanka CV</title>
+    <meta name="description"
+        content="Ihar Leshchanka - Frontend Developer with Android Development Experience. 5+ years in mobile development with Kotlin, Jetpack Compose, and modern web technologies.">
+    <meta name="keywords"
+        content="Frontend Developer, Android Developer, Kotlin, Jetpack Compose, JavaScript, TypeScript, Mobile Development">
+    <meta name="author" content="Ihar Leshchanka">
+    <title>Ihar Leshchanka - Frontend Developer CV</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <nav class="main-nav">
+    <nav class="main-nav" aria-label="Main navigation">
         <ul>
-            <li><a href="#contacts">Contacts</a></li>
-            <li><a href="#summary">Summary</a></li>
+            <li><a href="#contacts">Contact Information</a></li>
+            <li><a href="#summary">Self-Introduction</a></li>
             <li><a href="#skills">Skills</a></li>
-            <li><a href="#code">Code</a></li>
+            <li><a href="#code">Code Example</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#education">Education</a></li>
             <li><a href="#professional-development">Professional Development</a></li>
@@ -44,7 +49,7 @@
         </section>
 
         <section id="summary">
-            <h2>Summary</h2>
+            <h2>Self-Introduction</h2>
             <p>Frontend Developer with strong background as Android Developer with 5+ years of experience building
                 scalable, user-friendly mobile applications using Kotlin and Jetpack Compose. Strong understanding of
                 modern Android architecture, including Jetpack Compose, MVVM, and dependency injection with Hilt/Dagger
@@ -53,7 +58,7 @@
                 projects and 6 months of Flutter development.</p>
         </section>
 
-        <section id="skills" class="skills">
+        <section id="skills">
             <h2>Skills</h2>
 
             <h3>Frontend Development</h3>
@@ -69,24 +74,23 @@
                     Coil/Glide, Firebase</li>
                 <li><strong>Architecture:</strong> MVVM, Clean Architecture, Modularization</li>
                 <li><strong>Testing:</strong> JUnit, Espresso, Mockito, MockK, Robolectric</li>
-                <li><strong>Tools:</strong> Android Studio, Gradle</li>
             </ul>
 
             <h3>General</h3>
             <ul>
-                <li><strong>Version Control:</strong> Git, GitHub, GitLab, Bitbucket</li>
+                <li><strong>Version Control:</strong> Git (GitHub, GitLab, Bitbucket)</li>
                 <li><strong>CI/CD:</strong> GitHub Actions</li>
-                <li><strong>Tools:</strong> Android Studio, Postman, Charles Proxy</li>
-                <li><strong>Platforms:</strong> Jira, Confluence, Trello, Figma/Zeplin</li>
-                <li><strong>Communication:</strong> Slack, Microsoft Teams, Zoom, Google Meet</li>
-                <li><strong>Other:</strong> Google Maps API, BLE, REST API, GraphQL, Agile, Scrum, Material Design, Git
-                    (GitHub/GitLab/Bitbucket), Gradle, Android Jetpack, SQLite, Appsflyer</li>
+                <li><strong>Tools:</strong> Android Studio, Gradle, Postman, Charles Proxy</li>
+                <li><strong>Management:</strong> Jira, Confluence, Trello</li>
+                <li><strong>Design:</strong> Figma, Zeplin, Material Design</li>
+                <li><strong>APIs:</strong> REST API, GraphQL, Google Maps API, BLE</li>
+                <li><strong>Other:</strong> Agile, Scrum, Android Jetpack, SQLite, Appsflyer</li>
             </ul>
         </section>
 
         <section id="code">
             <h2>Code Example</h2>
-            <div class="education">
+            <div class="card">
                 <pre><code>function bubbleSort(arr) {
     const n = arr.length;
     
@@ -103,10 +107,10 @@
             </div>
         </section>
 
-        <section id="experience" class="experience">
-            <h2>Experience</h2>
+        <section id="experience">
+            <h2>Work Experience</h2>
 
-            <div class="job">
+            <div class="card">
                 <div class="job-header">
                     <h3>Appyfurious (Remote)</h3>
                     <p class="date">Mar 2024 – Aug 2025</p>
@@ -127,7 +131,7 @@
                 </ul>
             </div>
 
-            <div class="job">
+            <div class="card">
                 <div class="job-header">
                     <h3>Andersen (Hybrid)</h3>
                     <p class="date">Mar 2023 – Mar 2024</p>
@@ -160,7 +164,7 @@
                 </ul>
             </div>
 
-            <div class="job">
+            <div class="card">
                 <div class="job-header">
                     <h3>Solbeg_ (Hybrid)</h3>
                     <p class="date">Feb 2020 – Mar 2023</p>
@@ -187,7 +191,7 @@
 
         <section id="education">
             <h2>Education</h2>
-            <div class="education">
+            <div class="card">
                 <div>
                     <p>Bachelor of Physical Education</p>
                     <p>Brest State A.S. Pushkin University</p>
@@ -198,21 +202,28 @@
 
         <section id="professional-development">
             <h2>Professional Development</h2>
-            <div class="education">
+            <div class="card">
+                <div>
+                    <p>JS/FE Short Track 2026 Q1</p>
+                    <p>The Rolling Scopes School</p>
+                </div>
+                <p class="date">Jan 2026 - Present</p>
+            </div>
+            <div class="card">
                 <div>
                     <p>Android Developer (Professional)</p>
                     <p>OTUS</p>
                 </div>
                 <p class="date">Jul 2021 - Dec 2021</p>
             </div>
-            <div class="education">
+            <div class="card">
                 <div>
                     <p>Android Developer (Basic)</p>
                     <p>OTUS</p>
                 </div>
                 <p class="date">Jan 2021 - Jun 2021</p>
             </div>
-            <div class="education">
+            <div class="card">
                 <div>
                     <p>Android Development</p>
                     <p>IT Academy</p>
