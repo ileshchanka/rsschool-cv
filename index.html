@@ -2,254 +2,226 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Ihar Leshchanka - Frontend Developer with Android Development Experience. 5+ years in mobile development with Kotlin, Jetpack Compose, and modern web technologies.">
-    <meta name="keywords"
-        content="Frontend Developer, Android Developer, Kotlin, Jetpack Compose, JavaScript, TypeScript, Mobile Development">
+        content="CV of Ihar Leshchanka, Frontend Developer with 5+ years of mobile development experience in Kotlin and Jetpack Compose, now building web interfaces with TypeScript and Angular.">
     <meta name="author" content="Ihar Leshchanka">
-    <title>Ihar Leshchanka - Frontend Developer CV</title>
+    <title>Ihar Leshchanka &mdash; Frontend Developer CV</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <nav class="main-nav" aria-label="Main navigation">
-        <ul>
-            <li><a href="#contacts">Contact Information</a></li>
-            <li><a href="#summary">Self-Introduction</a></li>
+    <header class="hero">
+        <div class="hero__inner">
+            <img src="profile.jpg" width="600" height="600"
+                alt="Portrait photo of Ihar Leshchanka, frontend developer" class="hero__photo">
+            <div class="hero__text">
+                <p class="hero__eyebrow">Curriculum Vitae</p>
+                <h1>Ihar Leshchanka</h1>
+                <p class="hero__subtitle">Frontend Developer with 5+ years of Android engineering background</p>
+                <p class="hero__location">Warsaw, Poland</p>
+            </div>
+        </div>
+    </header>
+
+    <nav class="nav" aria-label="Sections of this CV">
+        <ul class="nav__list">
+            <li><a href="#contacts">Contacts</a></li>
+            <li><a href="#summary">About</a></li>
             <li><a href="#skills">Skills</a></li>
-            <li><a href="#code">Code Example</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#education">Education</a></li>
-            <li><a href="#professional-development">Professional Development</a></li>
+            <li><a href="#courses">Courses</a></li>
             <li><a href="#languages">Languages</a></li>
         </ul>
     </nav>
 
-    <header>
-        <div class="header-text">
-            <h1>Ihar Leshchanka</h1>
-            <p class="subtitle">Frontend Developer &bull; Android Development Experience (Kotlin | Jetpack Compose |
-                Coroutines | KMP)</p>
-        </div>
-        <img src="profile.jpg" alt="Ihar Leshchanka photo" class="profile-photo">
-    </header>
-
-    <main>
-        <section id="contacts" class="contact-info">
+    <main class="container">
+        <section id="contacts">
             <h2>Contact Information</h2>
-            <ul>
-                <li>📍 Warsaw, Poland</li>
-                <li>✉️ <a href="mailto:ihar.leshchanka@gmail.com">ihar.leshchanka@gmail.com</a></li>
-                <li>📞 +48 515 008 301</li>
-                <li>👤 <a href="https://linkedin.com/in/ileshchanka" target="_blank">linkedin.com/in/ileshchanka</a>
+            <ul class="contacts">
+                <li><span class="contacts__label">Location</span> Warsaw, Poland</li>
+                <li><span class="contacts__label">Email</span>
+                    <a href="mailto:ihar.leshchanka@gmail.com">ihar.leshchanka@gmail.com</a>
                 </li>
+                <li><span class="contacts__label">Phone</span> <a href="tel:+48515008301">+48 515 008 301</a></li>
+                <li><span class="contacts__label">LinkedIn</span>
+                    <a href="https://www.linkedin.com/in/ileshchanka">linkedin.com/in/ileshchanka</a>
+                </li>
+                <li><span class="contacts__label">GitHub</span>
+                    <a href="https://github.com/ileshchanka">github.com/ileshchanka</a>
+                </li>
+                <li><span class="contacts__label">Discord</span> ileshchanka</li>
             </ul>
         </section>
 
         <section id="summary">
             <h2>Self-Introduction</h2>
-            <p>Frontend Developer with strong background as Android Developer with 5+ years of experience building
-                scalable, user-friendly mobile applications using Kotlin and Jetpack Compose. Strong understanding of
-                modern Android architecture, including Jetpack Compose, MVVM, and dependency injection with Hilt/Dagger
-                2. Proven ability to improve app performance, optimize UX, and lead technical improvements that directly
-                impact business metrics. Additional experience includes exploring Kotlin Multiplatform (KMP) in personal
-                projects and 6 months of Flutter development.</p>
+            <p>I am a developer moving into frontend after 5+ years of building production mobile applications.
+                My Android background taught me what really matters in a user interface: predictable state,
+                reusable components, accessible layouts and measurable performance. I am now applying the same
+                habits to the web, writing TypeScript, semantic HTML and modern CSS, and building Angular
+                applications in my study projects.</p>
+            <p>I enjoy work where design and engineering meet &mdash; turning a mockup into a responsive,
+                maintainable interface, then refining it until it feels fast. I learn quickly, review code
+                carefully and communicate in English on a daily basis.</p>
         </section>
 
         <section id="skills">
             <h2>Skills</h2>
+            <div class="skills">
+                <article class="skills__group">
+                    <h3>Frontend</h3>
+                    <ul>
+                        <li>JavaScript (ES2015+), TypeScript</li>
+                        <li>Semantic HTML5, CSS3</li>
+                        <li>Responsive layout: Flexbox, Grid, media queries</li>
+                        <li>Angular, RxJS</li>
+                        <li>Vite, npm</li>
+                    </ul>
+                </article>
 
-            <h3>Frontend Development</h3>
-            <ul>
-                <li><strong>Languages:</strong> JavaScript, TypeScript, HTML</li>
-                <li><strong>Styling:</strong> CSS3, Responsive Design</li>
-            </ul>
+                <article class="skills__group">
+                    <h3>Android</h3>
+                    <ul>
+                        <li>Kotlin, Java</li>
+                        <li>Jetpack Compose, Coroutines and Flow</li>
+                        <li>Hilt, Dagger 2, Koin, Retrofit, Room</li>
+                        <li>MVVM, Clean Architecture, modularization</li>
+                        <li>JUnit, Espresso, MockK, Robolectric</li>
+                    </ul>
+                </article>
 
-            <h3>Android Development</h3>
-            <ul>
-                <li><strong>Languages:</strong> Kotlin, Java</li>
-                <li><strong>Technologies:</strong> Jetpack Compose, Coroutines/Flow, Hilt/Dagger2/Koin, Retrofit, Room,
-                    Coil/Glide, Firebase</li>
-                <li><strong>Architecture:</strong> MVVM, Clean Architecture, Modularization</li>
-                <li><strong>Testing:</strong> JUnit, Espresso, Mockito, MockK, Robolectric</li>
-            </ul>
-
-            <h3>General</h3>
-            <ul>
-                <li><strong>Version Control:</strong> Git (GitHub, GitLab, Bitbucket)</li>
-                <li><strong>CI/CD:</strong> GitHub Actions</li>
-                <li><strong>Tools:</strong> Android Studio, Gradle, Postman, Charles Proxy</li>
-                <li><strong>Management:</strong> Jira, Confluence, Trello</li>
-                <li><strong>Design:</strong> Figma, Zeplin, Material Design</li>
-                <li><strong>APIs:</strong> REST API, GraphQL, Google Maps API, BLE</li>
-                <li><strong>Other:</strong> Agile, Scrum, Android Jetpack, SQLite, Appsflyer</li>
-            </ul>
-        </section>
-
-        <section id="code">
-            <h2>Code Example</h2>
-            <div class="card">
-                <pre><code>function bubbleSort(arr) {
-    const n = arr.length;
-    
-    for (let i = 0; i &lt; n - 1; i++) {
-        for (let j = 0; j &lt; n - i - 1; j++) {
-            if (arr[j] &gt; arr[j + 1]) {
-                [arr[j], arr[j + 1]] = [arr[j + 1], arr[j]];
-            }
-        }
-    }
-    
-    return arr;
-}</code></pre>
+                <article class="skills__group">
+                    <h3>General</h3>
+                    <ul>
+                        <li>Git: GitHub, GitLab, Bitbucket</li>
+                        <li>CI/CD with GitHub Actions</li>
+                        <li>REST API, GraphQL</li>
+                        <li>Figma, Zeplin, Material Design</li>
+                        <li>Agile, Scrum, Jira, Confluence</li>
+                    </ul>
+                </article>
             </div>
         </section>
 
         <section id="experience">
             <h2>Work Experience</h2>
 
-            <div class="card">
-                <div class="job-header">
-                    <h3>Appyfurious (Remote)</h3>
-                    <p class="date">Mar 2024 &ndash; Aug 2025</p>
+            <article class="card">
+                <div class="card__head">
+                    <h3>Android Developer &mdash; Appyfurious</h3>
+                    <p class="card__date">Mar 2024 &ndash; Aug 2025 &middot; Remote</p>
                 </div>
                 <ul>
                     <li>Developed and published a mobile application using Jetpack Compose, improving UI rendering
-                        performance by 30%</li>
-                    <li>Designed reusable UI components and extended internal UI Kit to support cross-project
-                        consistency</li>
-                    <li>Worked closely with product team to enhance user flows, resulting in 2&times; increase in app
-                        engagement metrics</li>
+                        performance by 30%.</li>
+                    <li>Designed reusable UI components and extended the internal UI Kit to keep several projects
+                        visually consistent.</li>
+                    <li>Worked closely with the product team on user flows, which doubled app engagement metrics.</li>
+                    <li>Contributed to an app that scaled from 1,000 to 100,000+ downloads within months.</li>
+                    <li>Refactored legacy UI logic and decreased the crash rate by 40%.</li>
                 </ul>
-                <p><strong>Achievements:</strong></p>
+            </article>
+
+            <article class="card">
+                <div class="card__head">
+                    <h3>Android Developer &mdash; Andersen</h3>
+                    <p class="card__date">Mar 2023 &ndash; Mar 2024 &middot; Hybrid</p>
+                </div>
+                <h4>Tele Doc &mdash; healthcare</h4>
                 <ul>
-                    <li>Contributed to an app that scaled from 1,000 to 100,000+ downloads within months through
-                        UX-focused optimization</li>
-                    <li>Refactored legacy UI logic, decreasing crash rate by 40%</li>
+                    <li>Built features that let elderly patients monitor vitals and reach doctors over video calls.</li>
+                    <li>Integrated health data APIs and video call modules with Kotlin and Jetpack Compose.</li>
+                    <li>Worked with QA to find and fix key defects before the production launch.</li>
                 </ul>
-            </div>
-
-            <div class="card">
-                <div class="job-header">
-                    <h3>Andersen (Hybrid)</h3>
-                    <p class="date">Mar 2023 &ndash; Mar 2024</p>
-                </div>
-
-                <div class="project">
-                    <h4>Tele Doc (Healthcare)</h4>
-                    <ul>
-                        <li>Developed features for elderly patients to monitor vitals and connect with doctors via video
-                            conferencing</li>
-                        <li>Integrated health data APIs and video call modules using Kotlin and Jetpack Compose</li>
-                        <li>Collaborated with QA team to identify and fix key bugs prior to production launch</li>
-                    </ul>
-                </div>
-
-                <div class="project">
-                    <h4>RMT Mobile (Banking)</h4>
-                    <ul>
-                        <li>Implemented banking functionality (payments, transfers, exchange) in a secure mobile app
-                        </li>
-                        <li>Wrote unit and integration tests, improving test coverage to 85%</li>
-                        <li>Participated in architectural decisions and planning sessions</li>
-                    </ul>
-                </div>
-
-                <p><strong>Achievements:</strong></p>
+                <h4>RMT Mobile &mdash; banking</h4>
                 <ul>
-                    <li>Reduced feature delivery time by 25% through improved component reuse</li>
-                    <li>Enhanced app security and stability for end users in financial domain</li>
+                    <li>Implemented payments, transfers and currency exchange in a secure mobile application.</li>
+                    <li>Wrote unit and integration tests, raising coverage to 85%.</li>
+                    <li>Took part in architectural decisions and planning sessions.</li>
+                    <li>Reduced feature delivery time by 25% through better component reuse.</li>
                 </ul>
-            </div>
+            </article>
 
-            <div class="card">
-                <div class="job-header">
-                    <h3>Solbeg_ (Hybrid)</h3>
-                    <p class="date">Feb 2020 &ndash; Mar 2023</p>
+            <article class="card">
+                <div class="card__head">
+                    <h3>Android Developer &mdash; Solbeg_</h3>
+                    <p class="card__date">Feb 2020 &ndash; Mar 2023 &middot; Hybrid</p>
                 </div>
-
-                <div class="project">
-                    <h4>Flow Automotive</h4>
-                    <ul>
-                        <li>Created app modules for booking services and tracking vehicle history</li>
-                        <li>Integrated Directions API and Google Maps features for seamless navigation</li>
-                        <li>Participated in code review and collaborated across QA/BA teams</li>
-                    </ul>
-                </div>
-
-                <div class="project">
-                    <h4>MODD (Medical IoT)</h4>
-                    <ul>
-                        <li>Integrated insulin pump data into Android app via BLE</li>
-                        <li>Diagnosed and resolved connectivity issues during app rollout</li>
-                    </ul>
-                </div>
-            </div>
+                <h4>Flow Automotive</h4>
+                <ul>
+                    <li>Created modules for booking services and tracking vehicle history.</li>
+                    <li>Integrated the Directions API and Google Maps for in-app navigation.</li>
+                    <li>Reviewed code and collaborated with QA and business analysts.</li>
+                </ul>
+                <h4>MODD &mdash; medical IoT</h4>
+                <ul>
+                    <li>Integrated insulin pump data into an Android app over BLE.</li>
+                    <li>Diagnosed and resolved connectivity issues during the rollout.</li>
+                </ul>
+            </article>
         </section>
 
         <section id="education">
             <h2>Education</h2>
-            <div class="card">
-                <div>
-                    <p>Bachelor of Physical Education</p>
-                    <p>Brest State A.S. Pushkin University</p>
+            <article class="card">
+                <div class="card__head">
+                    <h3>Brest State A.S. Pushkin University</h3>
+                    <p class="card__date">2007 &ndash; 2012</p>
                 </div>
-                <p class="date">2007 &ndash; 2012</p>
-            </div>
+                <p>Bachelor of Physical Education.</p>
+            </article>
         </section>
 
-        <section id="professional-development">
+        <section id="courses">
             <h2>Professional Development</h2>
-            <div class="card">
-                <div>
-                    <p>JS/FE Short Track 2026 Q1</p>
-                    <p>The Rolling Scopes School</p>
-                </div>
-                <p class="date">Jan 2026 &ndash; Present</p>
-            </div>
-            <div class="card">
-                <div>
-                    <p>Android Developer (Professional)</p>
-                    <p>OTUS</p>
-                </div>
-                <p class="date">Jul 2021 &ndash; Dec 2021</p>
-            </div>
-            <div class="card">
-                <div>
-                    <p>Android Developer (Basic)</p>
-                    <p>OTUS</p>
-                </div>
-                <p class="date">Jan 2021 &ndash; Jun 2021</p>
-            </div>
-            <div class="card">
-                <div>
-                    <p>Android Development</p>
-                    <p>IT Academy</p>
-                </div>
-                <p class="date">Feb 2020 &ndash; Jul 2020</p>
-            </div>
+            <ul class="timeline">
+                <li>
+                    <span class="timeline__date">Jan 2026 &ndash; present</span>
+                    <span class="timeline__title">JS/FE Short Track 2026 Q1</span>
+                    <span class="timeline__org">The Rolling Scopes School</span>
+                </li>
+                <li>
+                    <span class="timeline__date">Jul 2021 &ndash; Dec 2021</span>
+                    <span class="timeline__title">Android Developer, Professional</span>
+                    <span class="timeline__org">OTUS</span>
+                </li>
+                <li>
+                    <span class="timeline__date">Jan 2021 &ndash; Jun 2021</span>
+                    <span class="timeline__title">Android Developer, Basic</span>
+                    <span class="timeline__org">OTUS</span>
+                </li>
+                <li>
+                    <span class="timeline__date">Feb 2020 &ndash; Jul 2020</span>
+                    <span class="timeline__title">Android Development</span>
+                    <span class="timeline__org">IT Academy</span>
+                </li>
+            </ul>
         </section>
 
-        <section id="languages" class="contact-info">
+        <section id="languages">
             <h2>Languages</h2>
-            <ul>
-                <li><strong>Russian:</strong> Native</li>
-                <li><strong>English:</strong> B1+</li>
-                <li><strong>Polish:</strong> B1</li>
+            <ul class="languages">
+                <li><span class="languages__name">English</span> B1+ &mdash; daily working communication</li>
+                <li><span class="languages__name">Russian</span> Native</li>
+                <li><span class="languages__name">Polish</span> B1</li>
             </ul>
         </section>
     </main>
 
-    <footer>
-        <p class="gdpr"><strong>GDPR Clause:</strong> I hereby consent to the processing of my personal data included in
-            my CV for the purposes of the recruitment process in accordance with Regulation (EU) 2016/679 (General Data
-            Protection Regulation).</p>
-        <div class="footer-content">
-            <p><a href="http://github.com/ileshchanka/" target="_blank">My GitHub profile</a> &copy; 2026</p>
-            <a href="https://rs.school/courses/short-track" target="_blank" class="rs-school-link">
-                <img src="rs-school-logo.svg" alt="RS School logo" class="rs-school-logo">
+    <footer class="footer">
+        <div class="container footer__inner">
+            <p class="footer__gdpr">I hereby consent to the processing of my personal data included in this CV for
+                the purposes of the recruitment process in accordance with Regulation (EU) 2016/679 (General Data
+                Protection Regulation).</p>
+            <p class="footer__meta">
+                <a href="https://github.com/ileshchanka">github.com/ileshchanka</a>
+                <span>&copy; 2026 Ihar Leshchanka</span>
+            </p>
+            <a href="https://rs.school/courses/short-track" class="footer__rs">
+                <img src="rs-school-logo.svg" width="180" height="67" alt="The Rolling Scopes School logo">
             </a>
         </div>
     </footer>
