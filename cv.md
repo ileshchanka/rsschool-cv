@@ -10,7 +10,7 @@ Warsaw, Poland
 
 - **Location:** Warsaw, Poland
 - **Email:** [ihar.leshchanka@gmail.com](mailto:ihar.leshchanka@gmail.com)
-- **Phone:** [+48 515 008 301](tel:+48515008301)
+- **Phone:** [+48&nbsp;515&nbsp;008&nbsp;301](tel:+48515008301)
 - **LinkedIn:** [linkedin.com/in/ileshchanka](https://www.linkedin.com/in/ileshchanka)
 - **GitHub:** [github.com/ileshchanka](https://github.com/ileshchanka)
 - **Discord:** ileshchanka
